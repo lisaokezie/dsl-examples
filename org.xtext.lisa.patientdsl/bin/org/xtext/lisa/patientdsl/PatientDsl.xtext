@@ -1,0 +1,17 @@
+grammar org.xtext.lisa.patientdsl.PatientDsl with org.eclipse.xtext.common.Terminals
+
+generate patientDsl "http://www.xtext.org/lisa/patientdsl/PatientDsl"
+
+Model:
+	patients+=Patient*;
+	
+Patient:
+	'patient' name=ID 
+	'insuranceType' insuranceType=InsuranceType 
+	'insuranceNumber' insuranceNumber=INT
+	('email' email=EMAIL)? 
+	('phoneNumber' phoneNumber=STRING)?;
+
+enum InsuranceType: PRIVATE = 'private' | COMPULSORY = 'compulsory';
+
+terminal EMAIL: ID '@' ID '.' ID;
