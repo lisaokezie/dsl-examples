@@ -1,0 +1,16 @@
+T__0=1
+T__1=2
+T__2=3
+T__3=4
+T__4=5
+INT=6
+HEADER_TYPE=7
+FOOTER_OPTION=8
+NAVIGATION_TYPE=9
+THEME_TYPE=10
+WS=11
+'columns'=1
+'header'=2
+'footer'=3
+'navigation'=4
+'theme'=5
